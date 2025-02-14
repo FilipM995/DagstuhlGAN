@@ -124,3 +124,11 @@ my_python_path.txt
 
 # weights
 *.pth
+
+# intellij
+output/
+*.idea
+LevelClipped.jpg
+LevelFull.jpg
+marioaiDagstuhl/.idea/misc.xml
+marioaiDagstuhl/.idea/workspace.xml
