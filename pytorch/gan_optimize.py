@@ -26,7 +26,7 @@ n_extra_layers = 0
 features = 10
 
 generator = dcgan.DCGAN_G(imageSize, nz, features, ngf, ngpu, n_extra_layers)
-generator.load_state_dict(torch.load('netG_epoch_5000.pth', map_location=lambda storage, loc: storage))
+generator.load_state_dict(torch.load('samples/netG_epoch_9950_0_32.pth', map_location=lambda storage, loc: storage))
 
 
 

@@ -1,0 +1,324 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+    {
+        "type": "java",
+        "name": "Launch Java Program",
+        "request": "launch",
+        "mainClass": ""
+    },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "PathFindingTest",
+            "request": "launch",
+            "mainClass": "basicMap.PathFindingTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Vector2d",
+            "request": "launch",
+            "mainClass": "basicMap.Vector2d",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "LevelEditor",
+            "request": "launch",
+            "mainClass": "ch.idsia.mario.engine.mapedit.LevelEditor",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "CompetitionScore",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.CompetitionScore",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "CustomRun",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.CustomRun",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Evolve",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.Evolve",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "EvolveIncrementally",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.EvolveIncrementally",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "EvolveMultiSeed",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.EvolveMultiSeed",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "GANEvaluator",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.GANEvaluator",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "MainRun",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.MainRun",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Play",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.Play",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Stats",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.Stats",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "EvolveSingle",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.test.EvolveSingle",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "EvolveWithChangingSeeds",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.test.EvolveWithChangingSeeds",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "PaperEvolve",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.test.PaperEvolve",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "PaperEvolveBatch",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.test.PaperEvolveBatch",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "StochasticityTest",
+            "request": "launch",
+            "mainClass": "ch.idsia.scenarios.test.StochasticityTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "ToolsConfigurator",
+            "request": "launch",
+            "mainClass": "ch.idsia.tools.ToolsConfigurator",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "StatisticalSummary",
+            "request": "launch",
+            "mainClass": "ch.idsia.utils.StatisticalSummary",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "StatisticalTests",
+            "request": "launch",
+            "mainClass": "ch.idsia.utils.StatisticalTests",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Stats(1)",
+            "request": "launch",
+            "mainClass": "ch.idsia.utils.Stats",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "CMAMarioSolver",
+            "request": "launch",
+            "mainClass": "cmatest.CMAMarioSolver",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "CMASolver",
+            "request": "launch",
+            "mainClass": "cmatest.CMASolver",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "QuadraticMultiBowl",
+            "request": "launch",
+            "mainClass": "cmatest.QuadraticMultiBowl",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "evaluateLevel",
+            "request": "launch",
+            "mainClass": "coco.evaluateLevel",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "simpleEvaluateLevel",
+            "request": "launch",
+            "mainClass": "coco.simpleEvaluateLevel",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "ZCreator",
+            "request": "launch",
+            "mainClass": "communication.ZCreator",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "GPEvolve",
+            "request": "launch",
+            "mainClass": "competition.cig.matthewerickson.GPEvolve",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "GeneticEvolver",
+            "request": "launch",
+            "mainClass": "competition.icegic.erek.GeneticEvolver",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "competition.icegic.rafael.object.area.Test",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "CMAExample1",
+            "request": "launch",
+            "mainClass": "fr.inria.optimization.cmaes.examples.CMAExample1",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "CMAExample2",
+            "request": "launch",
+            "mainClass": "fr.inria.optimization.cmaes.examples.CMAExample2",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "MarioReader",
+            "request": "launch",
+            "mainClass": "reader.MarioReader",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "MarioLevelPlayer",
+            "request": "launch",
+            "mainClass": "viewer.MarioLevelPlayer",
+            "projectName": "DagstuhlGAN",
+            "args": "[[0.6945178881518674,0.615697089477883,0.8106329789704235,-0.8012043597168159,0.42824799255322216,-0.5330349950304514,0.11269264910809003,-0.29315324214582733,0.02933796984047302,-0.19679872563347217,-0.9277547408325582,-0.1591019743735495,0.7986996057751656,-1.5040937604731033,-0.8032990053544552,0.4108318845609533,0.6945178881518674,0.615697089477883,0.8106329789704235,-0.8012043597168159,0.42824799255322216,-0.5330349950304514,0.11269264910809003,-0.29315324214582733,0.02933796984047302,-0.19679872563347217,-0.9277547408325582,-0.1591019743735495,0.7986996057751656,-1.5040937604731033,-0.8032990053544552,0.4108318845609533]]"
+
+        },
+        {
+            "type": "java",
+            "name": "MarioLevelViewer",
+            "request": "launch",
+            "mainClass": "viewer.MarioLevelViewer",
+            "projectName": "DagstuhlGAN",
+            "args": "[[0.5021384188536111, -0.6025319085532417, -0.28689722430650966, 0.3915522583943218, 0.8188752819582071, -0.22417465300761058, -0.6445230483208335, -0.7621094482433582, 0.5450685020740226, 0.5733973785122827, 0.4900239245950942, -0.3048199422872283, 0.17296042563532393, 0.1755715887721919, 0.7173389942813115, -0.845111058877691, -0.760046279788176, 0.9188886028417934, 0.9170295405362239, 0.5166958296116262, 0.7811807486659901, -0.3080505607582574, -0.7090195465861819, -0.1525611360066173, -0.5126928633690053, 0.7714901790004579, 0.477115436734933, -0.7842991830578375, -0.5722677351063886, 0.22270205532991477, 0.7330099561637002, -0.8021259103753074],[0.5021384188536111, -0.6025319085532417, -0.28689722430650966, 0.3915522583943218, 0.8188752819582071, -0.22417465300761058, -0.6445230483208335, -0.7621094482433582, 0.5450685020740226, 0.5733973785122827, 0.4900239245950942, -0.3048199422872283, 0.17296042563532393, 0.1755715887721919, 0.7173389942813115, -0.845111058877691, -0.760046279788176, 0.9188886028417934, 0.9170295405362239, 0.5166958296116262, 0.7811807486659901, -0.3080505607582574, -0.7090195465861819, -0.1525611360066173, -0.5126928633690053, 0.7714901790004579, 0.477115436734933, -0.7842991830578375, -0.5722677351063886, 0.22270205532991477, 0.7330099561637002, -0.8021259103753011]]"
+        },
+        {
+            "type": "java",
+            "name": "MarioRandomLevelViewer",
+            "request": "launch",
+            "mainClass": "viewer.MarioRandomLevelViewer",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "AccessTest",
+            "request": "launch",
+            "mainClass": "wox.serial.AccessTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListTest",
+            "request": "launch",
+            "mainClass": "wox.serial.ArrayListTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "EasyTest",
+            "request": "launch",
+            "mainClass": "wox.serial.EasyTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "ReadTest",
+            "request": "launch",
+            "mainClass": "wox.serial.ReadTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "ShadowTest",
+            "request": "launch",
+            "mainClass": "wox.serial.ShadowTest",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "Util",
+            "request": "launch",
+            "mainClass": "wox.serial.Util",
+            "projectName": "DagstuhlGAN"
+        },
+        {
+            "type": "java",
+            "name": "WriterTest",
+            "request": "launch",
+            "mainClass": "wox.serial.WriterTest",
+            "projectName": "DagstuhlGAN"
+        }
+    ]
+}
