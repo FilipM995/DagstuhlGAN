@@ -83,7 +83,10 @@ public class MarioRandomLevelViewer {
 		Settings.setPythonProgram();
 
 		// This is used because it contains code for communicating with the GAN
-		MarioEvalFunction eval = new MarioEvalFunction();
+		String GANPath = "pytorch\\experiment_1\\n" + //
+						"etG_epoch_9950_0_32.pth";
+
+		MarioEvalFunction eval = new MarioEvalFunction(GANPath, "32");
 
 		int nbLevels = 20;
 		int dim = 32;

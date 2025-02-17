@@ -188,7 +188,7 @@ for epoch in range(opt.niter):
 
             real_cpu = torch.FloatTensor(data)
 
-            if (False):
+            if False:
                 #im = data.cpu().numpy()
                 print(data.shape)
                 real_cpu = combine_images( tiles2image( np.argmax(data, axis = 1) ) )

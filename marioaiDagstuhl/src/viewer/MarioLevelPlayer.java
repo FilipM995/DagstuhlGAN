@@ -32,7 +32,12 @@ public class MarioLevelPlayer {
 	public static void main(String[] args) throws IOException {
 		Settings.setPythonProgram();
 		// This is used because it contains code for communicating with the GAN
-		MarioEvalFunction eval = new MarioEvalFunction();
+
+
+		String GANPath = "pytorch\\experiment_1\\n" + //
+						"etG_epoch_9300_0_32.pth";
+
+		MarioEvalFunction eval = new MarioEvalFunction(GANPath,"32");
 
 		Level level;
 		// Read input level
