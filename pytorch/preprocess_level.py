@@ -7,13 +7,15 @@ import numpy as np
 data_folder = "pytorch\\zelda\\processed"
 data_folder = os.path.join(os.getcwd(), data_folder)
 
-save_folder = os.getcwd()
+save_folder = "pytorch"
 
 os.makedirs(save_folder, exist_ok=True)
 
 window_size = (14, 9)
 
-with_walls = True
+with_walls = False
+
+one_tile_type = True
 
 levels_data = []
 
@@ -83,12 +85,17 @@ slided_levels = [slide_window(level, window_size, with_walls)
 complete_list = np.array(
     [window for level in slided_levels for window in level])
 
+if one_tile_type:
+    complete_list[complete_list == 2] = -1
+    complete_list[complete_list != -1] = 0
+    complete_list[complete_list == -1] = 1
 # print("SHAPE=", np.array(complete_list).shape)
 
 if with_walls:
-    save_name = "zelda_with_walls.json"
+    save_name = f"zelda_with_walls_{"bin" if one_tile_type else "mult"}.json"
+
 else:
-    save_name = "zelda.json"
+    save_name = f"zelda_{"bin" if one_tile_type else "mult"}.json"
 
 save_path = os.path.join(save_folder, save_name)
 

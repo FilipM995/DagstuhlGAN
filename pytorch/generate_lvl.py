@@ -9,7 +9,7 @@ from preprocess_level import print_from_mapping
 
 examples_json = "pytorch/zelda.json"
 original_images = np.array(json.load(open(examples_json)))
-model_to_load = "pytorch/pad_with_walls/netG_epoch_14900_0_32.pth"
+model_to_load = "pytorch/bin_no_walls/netG_epoch_14900_0_32.pth"
 # model_to_load = "pytorch/experiment_1/netG_epoch_9950_0_32.pth"
 
 nz = 32
@@ -21,7 +21,10 @@ imageSize = 16
 ngf = 64
 ngpu = 1
 n_extra_layers = 0
-z_dims = 10  # number different titles
+
+one_tile_type = True
+
+z_dims = 2 if one_tile_type else 10  # number different titles
 
 generator = dcgan.DCGAN_G(imageSize, nz, z_dims, ngf, ngpu, n_extra_layers)
 # generator.load_state_dict(torch.load('netG_epoch_24.pth', map_location=lambda storage, loc: storage))
@@ -59,6 +62,11 @@ level = np.argmax(level, axis=1)
 original_images = original_images[torch.randperm(len(original_images))]
 
 original_images = original_images[:batchSize, :, :]
+
+if one_tile_type:
+    original_images[original_images == 2] = -1
+    original_images[original_images != -1] = 0
+    original_images[original_images == -1] = 1
 
 
 # levels.data[levels.data > 0.] = 1  #SOLID BLOCK

@@ -77,14 +77,20 @@ if torch.cuda.is_available() and not opt.cuda:
 
 map_size = 16
 
+one_tile_type = True
+
+with_walls = True
+
+pad = "F"
+
 if opt.problem == 0:
-    examplesJson = "zelda.json"
+    examplesJson = f"zelda{"_with_walls" if with_walls else ""}_{"bin" if one_tile_type else "mult"}.json"
 else:
     examplesJson = "sepEx/examplemario{}.json".format(opt.problem)
 X = np.array(json.load(open(examplesJson)))
 print(X)
 print(X.shape)
-z_dims = 10  # Numer different title types
+z_dims = 2 if one_tile_type else 10 # Numer different title types
 
 num_batches = X.shape[0] / opt.batchSize
 
@@ -96,7 +102,7 @@ print("SHAPE ", X_onehot.shape)  # (173, 14, 28, 16)
 
 X_train = np.zeros((X.shape[0], z_dims, map_size, map_size))*2
 
-X_train[:, 2, :, :] = 1.0  # Fill with empty space
+# X_train[:, 2, :, :] = 1.0  # Fill with empty space
 
 
 def pad_for_zelda(X_train, X_onehot, one_hot_key):
@@ -130,7 +136,7 @@ def pad_for_zelda(X_train, X_onehot, one_hot_key):
 # X_train[:X.shape[0], :, :X.shape[1], :X.shape[2]] = X_onehot
 
 
-pad_for_zelda(X_train, X_onehot, 1)
+pad_for_zelda(X_train, X_onehot, 0 if pad == "W" else 1)
 
 ngpu = int(opt.ngpu)
 nz = int(opt.nz)
