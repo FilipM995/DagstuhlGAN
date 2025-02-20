@@ -125,6 +125,8 @@ my_python_path.txt
 # weights
 *.pth
 
+*.txt
+
 # intellij
 output/
 *.idea

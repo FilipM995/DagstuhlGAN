@@ -4,7 +4,7 @@ import json
 import os
 import numpy as np
 
-data_folder = "zelda\\processed"
+data_folder = "pytorch\\zelda\\processed"
 data_folder = os.path.join(os.getcwd(), data_folder)
 
 save_folder = os.getcwd()
@@ -83,7 +83,7 @@ slided_levels = [slide_window(level, window_size, with_walls)
 complete_list = np.array(
     [window for level in slided_levels for window in level])
 
-print("SHAPE=", np.array(complete_list).shape)
+# print("SHAPE=", np.array(complete_list).shape)
 
 if with_walls:
     save_name = "zelda_with_walls.json"
